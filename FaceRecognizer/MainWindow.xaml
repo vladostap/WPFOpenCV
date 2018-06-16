@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FaceRecognizer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="350" Width="400"
+        ResizeMode="NoResize">
     <Grid>
-        
+        <Button Content="Next Random Image" HorizontalAlignment="Left" Margin="15,15,0,0" VerticalAlignment="Top" Width="126" Name="SetRandomImageButton" Click="SetRandomImageButton_Click"/>
+        <Image HorizontalAlignment="Left" Height="235" Margin="10,61,0,25" VerticalAlignment="Center" Width="276" Name="ImageWindow" Source="./_res/logo.png"/>
+        <RadioButton Content="Eyes" GroupName="rb" Name="RBEyes" HorizontalAlignment="Left" Margin="315,61,0,0" VerticalAlignment="Top" Checked="RBEyes_Checked"/>
+        <RadioButton Content="Nose" GroupName="rb" Name="RBNose" HorizontalAlignment="Left" Margin="315,81,0,0" VerticalAlignment="Top" Checked="RBNose_Checked"/>
+        <Button Content="Select Image" HorizontalAlignment="Left" Margin="146,15,0,0" VerticalAlignment="Top" Width="75" Name="SelectImageButton" Click="SelectImageButton_Click"/>
     </Grid>
 </Window>
